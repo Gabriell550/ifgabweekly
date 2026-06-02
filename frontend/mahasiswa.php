@@ -25,43 +25,48 @@
     
     <table border="1" border ="1" cellpadding="10">
         <tr>
-            <th rowspan="2">NO</th>
-            <th rowspan="2">NAMA</th>
-            <th rowspan="2">PHOTO</th>
-            <th colspan="3">NILAI</th>
+            <th>NO</th>
+            <th>Nama</th>
+            <th>Foto</th>
+            <th>NIM</th>
+            <th>Jurusan</th>
+            <th>Email</th>
+            <th>No HP</th>
+            <th>Aksi</th>
         </tr>
-        <tr>
-            <td>UTS</td>
-            <td>UAS</td>
-            <td>TUGAS</td>
+          <tr>
+            <td align="center">1</td>
+            <td>John Doe</td>
+            <td><img src="../assets/images/ryan ghosling.jpg" alt="John Doe" width="60px"></td>
+            <td>13182420044</td>
+            <td>Informatika</td>
+            <td>gabriel@example.com</td>
+            <td>081234567890</td>
+            <td>
+                <a href="editdata.php"><Button>Edit</Button></a> | <a href="deletedata.php"><button>Hapus</button></a>
+            </td>
+        </tr>
+
         </tr>
           <tr>
             <td align="center">1</td>
             <td>John Doe</td>
             <td><img src="assets/images/ryan ghosling.jpg" alt="John Doe" width="60px"></td>
-            <td align="center">98</td>
-            <td align="center">90</td>
-            <td align="center">92</td>
+            <td>13182420044</td>
+            <td>Informatika</td>
+            <td>gabriel@example.com</td>
+            <td>081234567890</td>
         </tr>
 
         </tr>
           <tr>
             <td align="center">1</td>
-            <td>Ren Amamiya</td>
-            <td><img src="assets/images/joker.jpg" alt="Ren Amamiya" width="60px"></td>
-            <td align="center">90</td>
-            <td align="center">84</td>
-            <td align="center">87</td>
-        </tr>
-
-        </tr>
-          <tr>
-            <td align="center">1</td>
-            <td>Gabriello David</td>
-            <td><img src="assets/images/guweh.jpeg" alt="Gabriello David" width="60px"></td>
-            <td align="center">82</td>
-            <td align="center">90</td>
-            <td align="center">100</td>
+            <td>John Doe</td>
+            <td><img src="assets/images/ryan ghosling.jpg" alt="John Doe" width="60px"></td>
+            <td>13182420044</td>
+            <td>Informatika</td>
+            <td>gabriel@example.com</td>
+            <td>081234567890</td>
         </tr>
     </table>
     <br>
