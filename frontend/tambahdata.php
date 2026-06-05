@@ -7,27 +7,31 @@
 </head>
 <body>
     <h2>Tambah Data Mahasiswa</h2>
-    <form action="mahasiswa.php" method="post">
+    <form action="" method="post" enctype = "multipart/form-data">
         <table cellPadding="5px">
             <tr>
                 <td><label for="nama">Nama :</label></td>
-                <td><input type="text" name="nama" id="nama"></td>
+                <td><input type="text" name="nama" id="nama" required></td>
+            </tr>
+            <tr>
+                <td><label for="nim">NIM :</label></td>
+                <td><input type="number" name="nim" id="nim" required`></td>
+            </tr>
+            <tr>
+                <td><label for="jurusan">Jurusan :</label></td>
+                <td><input type="text" name="jurusan" id="jurusan" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email :</label></td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="no_hp">No HP :</label></td>
+                <td><input type="number" name="no_hp" id="no_hp" required   ></td>
             </tr>
             <tr>
                 <td><label for="foto">Foto :</label></td>
-                <td><input type="file" name="foto" id="foto"></td>
-            </tr>
-            <tr>
-                <td><label for="uts">UTS :</label></td>
-                <td><input type="number" name="uts" id="uts"></td>
-            </tr>
-            <tr>
-                <td><label for="uas">UAS :</label></td>
-                <td><input type="number" name="uas" id="uas"></td>
-            </tr>
-            <tr>
-                <td><label for="tugas">TUGAS :</label></td>
-                <td><input type="number" name="tugas" id="tugas"></td>
+                <td><input type="text" name="foto" id="foto"></td>
             </tr>
             <tr>
                 <td colspan="3">

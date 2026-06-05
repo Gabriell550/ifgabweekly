@@ -1,3 +1,14 @@
+<?php
+
+    require 'fungsi.php';
+
+    $query ="SELECT * FROM mahasiswa";
+
+    $mahasiswas = tampilData($query);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,27 +38,37 @@
         <tr>
             <th>NO</th>
             <th>Nama</th>
-            <th>Foto</th>
             <th>NIM</th>
             <th>Jurusan</th>
             <th>Email</th>
             <th>No HP</th>
+            <th>Foto</th>
             <th>Aksi</th>
         </tr>
-          <tr>
-            <td align="center">1</td>
-            <td>John Doe</td>
-            <td><img src="../assets/images/ryan ghosling.jpg" alt="John Doe" width="60px"></td>
-            <td>13182420044</td>
-            <td>Informatika</td>
-            <td>gabriel@example.com</td>
-            <td>081234567890</td>
+        <?php
+
+            $i = 1;        
+            foreach ($mahasiswas as $row)
+            {
+
+        ?>
+        <tr>
+            <td align="center"><?php echo $i; ?></td>
+            <td><?php echo $row['nama']; ?></td>
+            <td><?php echo $row['nim']; ?></td>
+            <td><?php echo $row['jurusan']; ?></td>
+            <td><?php echo $row['email']; ?></td>
+            <td><?php echo $row['no_hp']; ?></td>
+            <td><img src="../assets/images/<?php echo $row['foto']; ?>" alt="<?php echo $row['foto']; ?>" width="60px"></td>
             <td>
-                <a href="editdata.php"><Button>Edit</Button></a> | <a href="deletedata.php"><button>Hapus</button></a>
+                <a href="editdata.php?id=<?php echo $row['id']; ?>"><button>Edit</button></a> | <a href="deletedata.php?id=<?php echo $row['id']; ?>"><button>Hapus</button></a>
             </td>
         </tr>
-
-        </tr>
+        <?php
+            $i++;
+            }
+        ?>
+        <!-- </tr>
           <tr>
             <td align="center">1</td>
             <td>John Doe</td>
@@ -68,6 +89,7 @@
             <td>gabriel@example.com</td>
             <td>081234567890</td>
         </tr>
+    
     </table>
     <br>
 
