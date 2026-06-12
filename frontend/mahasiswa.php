@@ -61,7 +61,8 @@
             <td><?php echo $row['no_hp']; ?></td>
             <td><img src="../assets/images/<?php echo $row['foto']; ?>" alt="<?php echo $row['foto']; ?>" width="60px"></td>
             <td>
-                <a href="editdata.php?id=<?php echo $row['id']; ?>"><button>Edit</button></a> | <a href="deletedata.php?id=<?php echo $row['id']; ?>"><button>Hapus</button></a>
+                <a href="editdata.php?id=<?php echo $row['id']; ?>"><button>Edit</button></a> | 
+                <a href="hapusdata.php?id=<?= $row['id']?>" onclick="return confirm('Yakin wir?')"><button>Hapus</button></a>
             </td>
         </tr>
         <?php
