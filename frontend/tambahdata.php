@@ -4,7 +4,7 @@
 
     if(isset($_POST["submit"])) {
         
-        if (tambahData($_POST) > 0) {
+        if (tambahData($_POST, $_FILES["foto"]) > 0) {
 
         echo "<script>
                 alert('Data berhasil ditambahkan!');
@@ -55,7 +55,7 @@
             </tr>
             <tr>
                 <td><label for="foto">Foto :</label></td>
-                <td><input type="text" name="foto" id="foto"></td>
+                <td><input type="file" name="foto" id="foto"></td>
             </tr>
             <tr>
                 <td colspan="3">
